@@ -1,8 +1,8 @@
 #include <ThingerYun.h>
 
-#define USERNAME "PULABKC"
-#define DEVICE_ID "PU_Yun"
-#define DEVICE_CREDENTIAL "D%e8XQzizFXN"
+#define USERNAME "*****" // Thinger.io user name here
+#define DEVICE_ID "*****" // Device_ID
+#define DEVICE_CREDENTIAL "************" // password
 
 ThingerYun thing(USERNAME, DEVICE_ID, DEVICE_CREDENTIAL);
 
