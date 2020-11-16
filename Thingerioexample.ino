@@ -8,12 +8,11 @@ ThingerYun thing(USERNAME, DEVICE_ID, DEVICE_CREDENTIAL);
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
-  //pinMode(9, INPUT);
-  // initialize bridge
-  Bridge.begin();
+  pinMode(9, INPUT);
+  Bridge.begin(); // initialize bridge
 
   // pin control example (i.e. turning on/off a light, a relay, etc)
-  //thing["led"] << digitalPin(LED_BUILTIN);
+  thing["led"] << digitalPin(LED_BUILTIN);
 
   // resource output example (i.e. reading a sensor value, a variable, etc)
   thing["sensorvalue"] >> outputValue(analogRead(9));
